@@ -13,6 +13,7 @@ class Node:
 class SLL:
     def __init__(self, start=None):
         self.start = start
+        
 # 3. define a method is "empty" to check if the linked list is empty in SLL class.
     def is_empty(self):
         return self.start==None
