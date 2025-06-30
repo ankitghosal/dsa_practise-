@@ -118,6 +118,19 @@ class DLLIterator:
                     break
                 temp=temp.next
 
+# 13. define a method to reverse the list.
+    def reverse(self):
+        temp=None
+        current=self.start
+        while current is not None:
+            temp=current.prev
+            current.prev=current.next
+            current.next=temp
+            current=current.prev
+        if temp is not None:
+            self.start=temp.prev
+
+
 
 ''' Input'''
 mylist=DLL()
